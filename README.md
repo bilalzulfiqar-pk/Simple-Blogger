@@ -48,6 +48,9 @@ A minimal static blogging platform built with Next.js and Markdown. Effortless c
 │── package.json      # Dependencies and scripts
 ```
 
+## 📢 Live Demo
+Check out the live demo here: [Live Demo](https://your-live-demo-link.com)
+
 ## How to Add a New Blog Post
 
 1. Inside the `posts/` folder, create a new `.md` file:
