@@ -10,6 +10,10 @@ A minimal static blogging platform built with Next.js and Markdown. Effortless c
 - 📂 Automatically generates pages from the `posts` folder
 - 🔗 SEO-friendly URLs based on post slugs
 
+## 📢 Live Demo
+
+Check out the live demo here: [Live Demo](https://simple-blogger.vercel.app/)
+
 ## Installation & Setup
 
 1. **Clone the repository**
@@ -47,9 +51,6 @@ A minimal static blogging platform built with Next.js and Markdown. Effortless c
 │── next.config.js    # Next.js configuration
 │── package.json      # Dependencies and scripts
 ```
-
-## 📢 Live Demo
-Check out the live demo here: [Live Demo](https://your-live-demo-link.com)
 
 ## How to Add a New Blog Post
 
