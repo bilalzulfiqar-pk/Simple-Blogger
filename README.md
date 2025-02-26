@@ -1,36 +1,75 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Simple Blogger
 
-## Getting Started
+A minimal static blogging platform built with Next.js and Markdown. Effortless content creation with fast performance. 🚀
 
-First, run the development server:
+## Features
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+- 📝 Write posts using **Markdown (.md)** files
+- ⚡ **Static Generation (SSG)** for fast performance
+- 🎨 Styled with **Tailwind CSS** for a modern look
+- 📂 Automatically generates pages from the `posts` folder
+- 🔗 SEO-friendly URLs based on post slugs
+
+## Installation & Setup
+
+1. **Clone the repository**
+   ```bash
+   git clone https://github.com/yourusername/simple-blogger.git
+   cd simple-blogger
+   ```
+
+2. **Install dependencies**
+   ```bash
+   npm install
+   # or
+   yarn install
+   ```
+
+3. **Run the development server**
+   ```bash
+   npm run dev
+   # or
+   yarn dev
+   ```
+
+4. **Open in browser**
+   Visit [http://localhost:3000](http://localhost:3000) to see your blog.
+
+## Project Structure
+```
+/simple-blogger
+│── /posts            # Markdown blog posts
+│── /pages            # Next.js pages
+│   ├── index.js      # Home page (Lists blog posts)
+│   ├── post          # Dynamic route for blog posts
+│── /styles          # Global styles
+│── /public          # Static assets
+│── next.config.js    # Next.js configuration
+│── package.json      # Dependencies and scripts
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## How to Add a New Blog Post
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+1. Inside the `posts/` folder, create a new `.md` file:
+   ```
+   posts/my-first-post.md
+   ```
+2. Add metadata at the top of the file (Front Matter):
+   ```md
+   ---
+   title: "My First Blog Post"
+   date: "2025-02-26"
+   description: "An introduction to my blogging journey."
+   ---
+   ```
+3. Write your content below the metadata.
+4. The post will automatically appear on the homepage.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## Deployment
 
-## Learn More
+Easily deploy on **Vercel**:
+```bash
+npx vercel
+```
+Or manually deploy on **Netlify**, **GitHub Pages**, etc.
 
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
